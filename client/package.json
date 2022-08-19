@@ -1,0 +1,16 @@
+{
+  "name": "firewall_front",
+  "version": "1.0.0",
+  "description": "a frontend program for curriculum design of netsafety",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "dya",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.0.2",
+    "electron-reloader": "^1.2.3"
+  }
+}
