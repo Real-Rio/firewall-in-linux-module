@@ -12,6 +12,7 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("dya");
 
 static struct nf_hook_ops nfho;
+static struct net init_net1;
 
 unsigned int telnet_filter(void *priv,
 						   struct sk_buff *skb,
@@ -47,14 +48,23 @@ static int myfw_init(void)
 	nfho.hooknum = NF_INET_LOCAL_OUT;
 	nfho.priority = NF_IP_PRI_FIRST; // new version, maybe changed to NF_INET_PRI_FIRST
 
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(4, 13, 0)
+	nf_register_net_hook(&init_net1, &nfho);
+#else
 	nf_register_hook(&nfho);
+#endif
 	return 0;
 }
 
 static void myfw_exit(void)
 {
 	printk("my firewall module exit ...\n");
-	nf_unregister_hook(&nfho);
+	// unregister hook depends on kernel version
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(4, 13, 0)
+	nf_register_net_hook(&init_net1, &nfho);
+#else
+	nf_register_hook(&nfho);
+#endif
 }
 
 module_init(myfw_init);

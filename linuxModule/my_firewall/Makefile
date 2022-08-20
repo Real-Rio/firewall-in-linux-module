@@ -1,5 +1,5 @@
-#KERN_DIR = /usr/src/$(shell uname -r)
-KERN_DIR = /lib/modules/$(shell uname -r)/build
+KERN_DIR = /usr/src/linux-headers-5.4.0-89-generic
+# KERN_DIR = /lib/modules/$(shell uname -r)/build
 myfw-objs := my_firewall.o #my_dev.o
 obj-m += myfw.o
 
