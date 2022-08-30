@@ -6,17 +6,19 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-#define NETLINK_TEST	17
-#define MSG_LEN	256
+#define NETLINK_TEST 17
+#define MSG_LEN 256
 
 char *default_data = "Netlink Test Default Data";
 
-struct msg_to_kernel {
+struct msg_to_kernel
+{
 	struct nlmsghdr hdr;
 	char data[MSG_LEN];
 };
 
-struct u_packet_info {
+struct u_packet_info
+{
 	struct nlmsghdr hdr;
 	char msg[MSG_LEN];
 };
@@ -32,15 +34,19 @@ int main(int argc, char *argv[])
 	struct u_packet_info info;
 	char *retval;
 
-	if (argc == 2) {
+	if (argc == 2)
+	{
 		data = argv[1];
-	} else {
+	}
+	else
+	{
 		data = default_data;
 	}
 	dlen = strlen(data) + 1;
 
 	skfd = socket(PF_NETLINK, SOCK_RAW, NETLINK_TEST);
-	if (skfd < 0) {
+	if (skfd < 0)
+	{
 		printf("can not create a netlink socket\n");
 		return -1;
 	}
@@ -49,7 +55,8 @@ int main(int argc, char *argv[])
 	local.nl_family = AF_NETLINK;
 	local.nl_pid = getpid();
 	local.nl_groups = 0;
-	if (bind(skfd, (struct sockaddr *) &local, sizeof(local)) != 0) {
+	if (bind(skfd, (struct sockaddr *)&local, sizeof(local)) != 0)
+	{
 		printf("bind() error\n");
 		return -1;
 	}
@@ -58,8 +65,9 @@ int main(int argc, char *argv[])
 	kpeer.nl_pid = 0;
 	kpeer.nl_groups = 0;
 
-	message = (struct nlmsghdr *) malloc(sizeof(struct msg_to_kernel));
-	if (message == NULL) {
+	message = (struct nlmsghdr *)malloc(sizeof(struct msg_to_kernel));
+	if (message == NULL)
+	{
 		printf("malloc() error\n");
 		return -1;
 	}
@@ -73,22 +81,23 @@ int main(int argc, char *argv[])
 
 	retval = memcpy(NLMSG_DATA(message), data, strlen(data));
 
-	printf("message sendto kernel, content: '%s', len: %d\n", (char *) NLMSG_DATA(message), message->nlmsg_len);
-	ret = sendto(skfd, message, message->nlmsg_len, 0, (struct sockaddr *) &kpeer, sizeof(kpeer));
-	if (!ret) {
+	printf("message sendto kernel, content: '%s', len: %d\n", (char *)NLMSG_DATA(message), message->nlmsg_len);
+	ret = sendto(skfd, message, message->nlmsg_len, 0, (struct sockaddr *)&kpeer, sizeof(kpeer));
+	if (!ret)
+	{
 		perror("sendto:");
 		exit(-1);
 	}
 
-	ret = recvfrom(skfd, &info, sizeof(struct u_packet_info), 0, (struct sockaddr *) &kpeer, &kpeerlen);
-	if (!ret) {
+	ret = recvfrom(skfd, &info, sizeof(struct u_packet_info), 0, (struct sockaddr *)&kpeer, &kpeerlen);
+	if (!ret)
+	{
 		perror("recvfrom:");
 		exit(-1);
 	}
 
-	printf("message recvfrom kernel, content: '%s'\n", (char *) info.msg);
+	printf("message recvfrom kernel, content: '%s'\n", (char *)info.msg);
 
 	close(skfd);
 	return 0;
 }
-
