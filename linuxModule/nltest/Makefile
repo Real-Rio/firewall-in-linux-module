@@ -16,5 +16,5 @@ app:
 	gcc -o nltest_uapp nltest_uapp.c
 
 clean:
-	rm -fr *.ko *.o *.cmd nltest_uapp $(MODULE_NAME).mod.c modules.order Module.symvers
+	rm -fr *.ko *.o *.cmd *.mod *.a nltest_uapp $(MODULE_NAME).mod.c modules.order Module.symvers
 

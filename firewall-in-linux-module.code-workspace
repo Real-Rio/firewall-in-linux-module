@@ -3,5 +3,13 @@
         {
             "path": "."
         }
-    ]
+    ],
+    "settings": {
+        "files.associations": {
+            "netfilter.h": "c",
+            "netfltr.h": "c",
+            "utils.h": "c",
+            "dya_utils.h": "c"
+        }
+    }
 }

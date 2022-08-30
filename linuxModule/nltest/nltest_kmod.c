@@ -5,7 +5,7 @@
 #include <net/sock.h>
 #include <linux/netlink.h>
 
-#define NETLINK_TEST	17
+#define NETLINK_TEST 17
 
 static struct sock *nlsk = NULL;
 
@@ -21,7 +21,8 @@ int nltest_ksend(char *info, int pid)
 	rlen = strlen(reply) + 1;
 
 	skb = nlmsg_new(rlen, GFP_ATOMIC);
-	if (skb == NULL) {
+	if (skb == NULL)
+	{
 		printk("alloc reply nlmsg skb failed!\n");
 		return -1;
 	}
@@ -30,10 +31,10 @@ int nltest_ksend(char *info, int pid)
 	memcpy(NLMSG_DATA(nlh), reply, rlen);
 	printk("[kernel space] nlmsglen = %d\n", nlh->nlmsg_len);
 
-	//NETLINK_CB(skb).pid = 0;
+	// NETLINK_CB(skb).pid = 0;
 	NETLINK_CB(skb).dst_group = 0;
 
-	printk("[kernel space] skb->data send to user: '%s'\n", (char *) NLMSG_DATA(nlh));
+	printk("[kernel space] skb->data send to user: '%s'\n", (char *)NLMSG_DATA(nlh));
 
 	retval = netlink_unicast(nlsk, skb, pid, MSG_DONTWAIT);
 	printk("[kernel space] netlink_unicast return: %d\n", retval);
@@ -47,12 +48,13 @@ void nltest_krecv(struct sk_buff *skb)
 	int pid;
 
 	nlh = nlmsg_hdr(skb);
-	if ((nlh->nlmsg_len < NLMSG_HDRLEN) || (skb->len < nlh->nlmsg_len)) {
+	if ((nlh->nlmsg_len < NLMSG_HDRLEN) || (skb->len < nlh->nlmsg_len))
+	{
 		printk("Illegal netlink packet!\n");
 		return;
 	}
 
-	data = (char *) NLMSG_DATA(nlh);
+	data = (char *)NLMSG_DATA(nlh);
 	printk("[kernel space] data receive from user: '%s'\n", data);
 	pid = nlh->nlmsg_pid;
 	printk("[kernel space] user_pid = %d\n", pid);
@@ -60,20 +62,21 @@ void nltest_krecv(struct sk_buff *skb)
 }
 
 struct netlink_kernel_cfg nltest_cfg = {
-	0,	//groups
-	0,	//flags
-	nltest_krecv,	//input
-	NULL,	//cb_mutex
-	NULL,	//bind
-	NULL,	//unbind
-	NULL,	//compare
+	0,			  // groups
+	0,			  // flags
+	nltest_krecv, // input
+	NULL,		  // cb_mutex
+	NULL,		  // bind
+	NULL,		  // unbind
+	NULL,		  // compare
 };
 
 int __init nltest_init(void)
 {
 	printk("Netlink test module initializing...\n");
 	nlsk = netlink_kernel_create(&init_net, NETLINK_TEST, &nltest_cfg);
-	if (!nlsk) {
+	if (!nlsk)
+	{
 		printk("can not create a netlink socket\n");
 		return -1;
 	}

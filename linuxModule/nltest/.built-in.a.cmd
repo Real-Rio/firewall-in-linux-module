@@ -1,0 +1,1 @@
+cmd_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/nltest/built-in.a := rm -f /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/nltest/built-in.a; ar cDPrST /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/nltest/built-in.a 
