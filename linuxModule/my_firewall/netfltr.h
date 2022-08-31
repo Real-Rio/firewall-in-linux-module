@@ -1,7 +1,7 @@
 /*
  * @Author: Rio
  * @Date: 2022-08-30 18:48:51
- * @LastEditTime: 2022-08-30 19:54:37
+ * @LastEditTime: 2022-08-31 18:42:21
  * @FilePath: /firewall-in-linux-module/linuxModule/my_firewall/netfltr.h
  * @Description:头文件
  */
@@ -17,8 +17,12 @@
 #include <linux/netfilter_ipv4.h>
 #include <linux/ip.h>
 #include <linux/tcp.h>
+#include <linux/string.h>
 
-#include "dya_utils.h"
+unsigned int str_to_port(char *);
+unsigned int str_to_ip(char *, int);
+bool compare_ip(unsigned int, unsigned int);
+bool compare_port(unsigned int, unsigned int);
 
 unsigned int in_filtrFunc(void *priv,
                           struct sk_buff *skb,

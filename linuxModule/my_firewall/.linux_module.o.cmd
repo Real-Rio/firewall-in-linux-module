@@ -1,8 +1,8 @@
-cmd_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.o := gcc -Wp,-MD,/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/.dya_utils.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/9/include  -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -flive-patching=inline-clone -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned  -DMODULE  -DKBUILD_BASENAME='"dya_utils"' -DKBUILD_MODNAME='"myfw"' -c -o /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.o /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.c
+cmd_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/linux_module.o := gcc -Wp,-MD,/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/.linux_module.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/9/include  -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -flive-patching=inline-clone -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned  -DMODULE  -DKBUILD_BASENAME='"linux_module"' -DKBUILD_MODNAME='"myfw"' -c -o /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/linux_module.o /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/linux_module.c
 
-source_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.o := /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.c
+source_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/linux_module.o := /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/linux_module.c
 
-deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.o := \
+deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/linux_module.o := \
   include/linux/kconfig.h \
     $(wildcard include/config/cpu/big/endian.h) \
     $(wildcard include/config/booger.h) \
@@ -17,7 +17,6 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
     $(wildcard include/config/arm64.h) \
     $(wildcard include/config/retpoline.h) \
     $(wildcard include/config/arch/use/builtin/bswap.h) \
-  /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/netfltr.h \
   include/linux/kernel.h \
     $(wildcard include/config/preempt/voluntary.h) \
     $(wildcard include/config/debug/atomic/sleep.h) \
@@ -678,78 +677,6 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
   arch/x86/include/asm/orc_types.h \
-  include/generated/uapi/linux/version.h \
-  include/linux/skbuff.h \
-    $(wildcard include/config/nf/conntrack.h) \
-    $(wildcard include/config/bridge/netfilter.h) \
-    $(wildcard include/config/net/tc/skb/ext.h) \
-    $(wildcard include/config/skb/extensions.h) \
-    $(wildcard include/config/ipv6/ndisc/nodetype.h) \
-    $(wildcard include/config/net/switchdev.h) \
-    $(wildcard include/config/net/cls/act.h) \
-    $(wildcard include/config/net/redirect.h) \
-    $(wildcard include/config/tls/device.h) \
-    $(wildcard include/config/net/sched.h) \
-    $(wildcard include/config/net/rx/busy/poll.h) \
-    $(wildcard include/config/xps.h) \
-    $(wildcard include/config/network/secmark.h) \
-    $(wildcard include/config/net.h) \
-    $(wildcard include/config/have/efficient/unaligned/access.h) \
-    $(wildcard include/config/network/phy/timestamping.h) \
-    $(wildcard include/config/xfrm.h) \
-    $(wildcard include/config/netfilter/xt/target/trace.h) \
-    $(wildcard include/config/nf/tables.h) \
-    $(wildcard include/config/ip/vs.h) \
-  include/linux/bvec.h \
-  include/linux/mm.h \
-    $(wildcard include/config/have/arch/mmap/rnd/bits.h) \
-    $(wildcard include/config/have/arch/mmap/rnd/compat/bits.h) \
-    $(wildcard include/config/arch/uses/high/vma/flags.h) \
-    $(wildcard include/config/arch/has/pkeys.h) \
-    $(wildcard include/config/ppc.h) \
-    $(wildcard include/config/parisc.h) \
-    $(wildcard include/config/sparc64.h) \
-    $(wildcard include/config/stack/growsup.h) \
-    $(wildcard include/config/shmem.h) \
-    $(wildcard include/config/arch/has/pte/devmap.h) \
-    $(wildcard include/config/dev/pagemap/ops.h) \
-    $(wildcard include/config/device/private.h) \
-    $(wildcard include/config/pci/p2pdma.h) \
-    $(wildcard include/config/debug/vm/rb.h) \
-    $(wildcard include/config/page/poisoning.h) \
-    $(wildcard include/config/init/on/alloc/default/on.h) \
-    $(wildcard include/config/init/on/free/default/on.h) \
-    $(wildcard include/config/debug/pagealloc.h) \
-    $(wildcard include/config/arch/has/set/direct/map.h) \
-    $(wildcard include/config/hibernation.h) \
-    $(wildcard include/config/hugetlbfs.h) \
-  include/linux/percpu-refcount.h \
-  include/linux/bit_spinlock.h \
-  include/linux/shrinker.h \
-  include/linux/resource.h \
-  include/uapi/linux/resource.h \
-  arch/x86/include/generated/uapi/asm/resource.h \
-  include/asm-generic/resource.h \
-  include/uapi/asm-generic/resource.h \
-  include/linux/page_ext.h \
-  include/linux/stacktrace.h \
-    $(wildcard include/config/stacktrace.h) \
-    $(wildcard include/config/arch/stackwalk.h) \
-    $(wildcard include/config/have/reliable/stacktrace.h) \
-  include/linux/stackdepot.h \
-  include/linux/page_ref.h \
-    $(wildcard include/config/debug/page/ref.h) \
-  include/linux/memremap.h \
-  include/linux/ioport.h \
-    $(wildcard include/config/io/strict/devmem.h) \
-  include/linux/sizes.h \
-  arch/x86/include/asm/pgtable.h \
-    $(wildcard include/config/debug/wx.h) \
-    $(wildcard include/config/have/arch/transparent/hugepage/pud.h) \
-    $(wildcard include/config/have/arch/soft/dirty.h) \
-    $(wildcard include/config/arch/enable/thp/migration.h) \
-  arch/x86/include/asm/fpu/xstate.h \
-  include/linux/uaccess.h \
   include/linux/sched.h \
     $(wildcard include/config/virt/cpu/accounting/native.h) \
     $(wildcard include/config/sched/info.h) \
@@ -835,6 +762,11 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   arch/x86/include/generated/asm/unistd_32_ia32.h \
   include/asm-generic/seccomp.h \
   include/uapi/linux/unistd.h \
+  include/linux/resource.h \
+  include/uapi/linux/resource.h \
+  arch/x86/include/generated/uapi/asm/resource.h \
+  include/asm-generic/resource.h \
+  include/uapi/asm-generic/resource.h \
   include/linux/latencytop.h \
   include/linux/sched/prio.h \
   include/linux/sched/types.h \
@@ -852,21 +784,105 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
     $(wildcard include/config/posix/timers.h) \
   include/linux/alarmtimer.h \
   include/uapi/linux/rseq.h \
+  include/net/sock.h \
+    $(wildcard include/config/ipv6.h) \
+    $(wildcard include/config/xps.h) \
+    $(wildcard include/config/net/rx/busy/poll.h) \
+    $(wildcard include/config/xfrm.h) \
+    $(wildcard include/config/sock/validate/xmit.h) \
+    $(wildcard include/config/bpf/syscall.h) \
+    $(wildcard include/config/net.h) \
+    $(wildcard include/config/rps.h) \
+    $(wildcard include/config/sock/cgroup/data.h) \
+    $(wildcard include/config/inet.h) \
+    $(wildcard include/config/tls/device.h) \
+  include/linux/hardirq.h \
+  include/linux/ftrace_irq.h \
+    $(wildcard include/config/ftrace/nmi/enter.h) \
+    $(wildcard include/config/hwlat/tracer.h) \
+  include/linux/vtime.h \
+    $(wildcard include/config/virt/cpu/accounting.h) \
+    $(wildcard include/config/irq/time/accounting.h) \
+  include/linux/context_tracking_state.h \
+    $(wildcard include/config/context/tracking.h) \
+  include/linux/list_nulls.h \
+  include/linux/netdevice.h \
+    $(wildcard include/config/dcb.h) \
+    $(wildcard include/config/hyperv/net.h) \
+    $(wildcard include/config/wlan.h) \
+    $(wildcard include/config/ax25.h) \
+    $(wildcard include/config/mac80211/mesh.h) \
+    $(wildcard include/config/net/ipip.h) \
+    $(wildcard include/config/net/ipgre.h) \
+    $(wildcard include/config/ipv6/sit.h) \
+    $(wildcard include/config/ipv6/tunnel.h) \
+    $(wildcard include/config/netpoll.h) \
+    $(wildcard include/config/xdp/sockets.h) \
+    $(wildcard include/config/bql.h) \
+    $(wildcard include/config/rfs/accel.h) \
+    $(wildcard include/config/fcoe.h) \
+    $(wildcard include/config/xfrm/offload.h) \
+    $(wildcard include/config/net/poll/controller.h) \
+    $(wildcard include/config/libfcoe.h) \
+    $(wildcard include/config/wireless/ext.h) \
+    $(wildcard include/config/net/l3/master/dev.h) \
+    $(wildcard include/config/vlan/8021q.h) \
+    $(wildcard include/config/net/dsa.h) \
+    $(wildcard include/config/tipc.h) \
+    $(wildcard include/config/irda.h) \
+    $(wildcard include/config/atalk.h) \
+    $(wildcard include/config/decnet.h) \
+    $(wildcard include/config/mpls/routing.h) \
+    $(wildcard include/config/net/cls/act.h) \
+    $(wildcard include/config/netfilter/ingress.h) \
+    $(wildcard include/config/net/sched.h) \
+    $(wildcard include/config/garp.h) \
+    $(wildcard include/config/mrp.h) \
+    $(wildcard include/config/cgroup/net/prio.h) \
+    $(wildcard include/config/net/flow/limit.h) \
+  include/linux/delay.h \
+  arch/x86/include/asm/delay.h \
+  include/asm-generic/delay.h \
+  include/linux/prefetch.h \
+  include/linux/dynamic_queue_limits.h \
+  include/linux/ethtool.h \
+  include/linux/compat.h \
+    $(wildcard include/config/arch/has/syscall/wrapper.h) \
+    $(wildcard include/config/compat/old/sigaction.h) \
+    $(wildcard include/config/odd/rt/sigaction.h) \
+  include/linux/socket.h \
+  arch/x86/include/generated/uapi/asm/socket.h \
+  include/uapi/asm-generic/socket.h \
+  arch/x86/include/generated/uapi/asm/sockios.h \
+  include/uapi/asm-generic/sockios.h \
+  include/uapi/linux/sockios.h \
+  include/linux/uio.h \
+    $(wildcard include/config/arch/has/uaccess/mcsafe.h) \
+  include/crypto/hash.h \
+  include/linux/crypto.h \
+    $(wildcard include/config/crypto/stats.h) \
+  include/linux/slab.h \
+    $(wildcard include/config/debug/slab.h) \
+    $(wildcard include/config/failslab.h) \
+    $(wildcard include/config/memcg/kmem.h) \
+    $(wildcard include/config/have/hardened/usercopy/allocator.h) \
+    $(wildcard include/config/slab.h) \
+    $(wildcard include/config/slub.h) \
+    $(wildcard include/config/slob.h) \
+  include/linux/percpu-refcount.h \
+  include/linux/kasan.h \
+    $(wildcard include/config/kasan/generic.h) \
+  include/linux/uaccess.h \
   arch/x86/include/asm/uaccess.h \
     $(wildcard include/config/x86/intel/usercopy.h) \
   arch/x86/include/asm/smap.h \
   arch/x86/include/asm/extable.h \
   arch/x86/include/asm/uaccess_64.h \
-  arch/x86/include/asm/fpu/api.h \
-    $(wildcard include/config/x86/debug/fpu.h) \
-  arch/x86/include/asm/pgtable_64.h \
-  arch/x86/include/asm/pgtable-invert.h \
-  include/asm-generic/pgtable.h \
-    $(wildcard include/config/have/arch/huge/vmap.h) \
-    $(wildcard include/config/x86/espfix64.h) \
-  include/linux/huge_mm.h \
-  include/linux/sched/coredump.h \
-    $(wildcard include/config/core/dump/default/elf/headers.h) \
+  include/uapi/linux/uio.h \
+  include/uapi/linux/socket.h \
+  include/uapi/linux/if.h \
+  include/uapi/linux/libc-compat.h \
+  include/uapi/linux/hdlc/ioctl.h \
   include/linux/fs.h \
     $(wildcard include/config/read/only/thp/for/fs.h) \
     $(wildcard include/config/fs/posix/acl.h) \
@@ -889,6 +905,7 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/linux/dcache.h \
   include/linux/rculist_bl.h \
   include/linux/list_bl.h \
+  include/linux/bit_spinlock.h \
   include/linux/lockref.h \
     $(wildcard include/config/arch/use/cmpxchg/lockref.h) \
   include/linux/stringhash.h \
@@ -897,7 +914,7 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
     $(wildcard include/config/have/arch/hash.h) \
   include/linux/path.h \
   include/linux/list_lru.h \
-    $(wildcard include/config/memcg/kmem.h) \
+  include/linux/shrinker.h \
   include/linux/capability.h \
   include/uapi/linux/capability.h \
   include/linux/semaphore.h \
@@ -930,6 +947,81 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/linux/projid.h \
   include/uapi/linux/quota.h \
   include/linux/nfs_fs_i.h \
+  include/uapi/linux/aio_abi.h \
+  arch/x86/include/asm/compat.h \
+  include/linux/sched/task_stack.h \
+    $(wildcard include/config/stack/growsup.h) \
+    $(wildcard include/config/debug/stack/usage.h) \
+  include/uapi/linux/magic.h \
+  arch/x86/include/asm/user32.h \
+  include/asm-generic/compat.h \
+  arch/x86/include/asm/syscall_wrapper.h \
+  include/uapi/linux/ethtool.h \
+  include/linux/if_ether.h \
+  include/linux/skbuff.h \
+    $(wildcard include/config/nf/conntrack.h) \
+    $(wildcard include/config/bridge/netfilter.h) \
+    $(wildcard include/config/net/tc/skb/ext.h) \
+    $(wildcard include/config/skb/extensions.h) \
+    $(wildcard include/config/ipv6/ndisc/nodetype.h) \
+    $(wildcard include/config/net/switchdev.h) \
+    $(wildcard include/config/net/redirect.h) \
+    $(wildcard include/config/network/secmark.h) \
+    $(wildcard include/config/have/efficient/unaligned/access.h) \
+    $(wildcard include/config/network/phy/timestamping.h) \
+    $(wildcard include/config/netfilter/xt/target/trace.h) \
+    $(wildcard include/config/nf/tables.h) \
+    $(wildcard include/config/ip/vs.h) \
+  include/linux/bvec.h \
+  include/linux/mm.h \
+    $(wildcard include/config/have/arch/mmap/rnd/bits.h) \
+    $(wildcard include/config/have/arch/mmap/rnd/compat/bits.h) \
+    $(wildcard include/config/arch/uses/high/vma/flags.h) \
+    $(wildcard include/config/arch/has/pkeys.h) \
+    $(wildcard include/config/ppc.h) \
+    $(wildcard include/config/parisc.h) \
+    $(wildcard include/config/sparc64.h) \
+    $(wildcard include/config/shmem.h) \
+    $(wildcard include/config/arch/has/pte/devmap.h) \
+    $(wildcard include/config/dev/pagemap/ops.h) \
+    $(wildcard include/config/device/private.h) \
+    $(wildcard include/config/pci/p2pdma.h) \
+    $(wildcard include/config/debug/vm/rb.h) \
+    $(wildcard include/config/page/poisoning.h) \
+    $(wildcard include/config/init/on/alloc/default/on.h) \
+    $(wildcard include/config/init/on/free/default/on.h) \
+    $(wildcard include/config/debug/pagealloc.h) \
+    $(wildcard include/config/arch/has/set/direct/map.h) \
+    $(wildcard include/config/hibernation.h) \
+    $(wildcard include/config/hugetlbfs.h) \
+  include/linux/page_ext.h \
+  include/linux/stacktrace.h \
+    $(wildcard include/config/stacktrace.h) \
+    $(wildcard include/config/arch/stackwalk.h) \
+    $(wildcard include/config/have/reliable/stacktrace.h) \
+  include/linux/stackdepot.h \
+  include/linux/page_ref.h \
+    $(wildcard include/config/debug/page/ref.h) \
+  include/linux/memremap.h \
+  include/linux/ioport.h \
+    $(wildcard include/config/io/strict/devmem.h) \
+  include/linux/sizes.h \
+  arch/x86/include/asm/pgtable.h \
+    $(wildcard include/config/debug/wx.h) \
+    $(wildcard include/config/have/arch/transparent/hugepage/pud.h) \
+    $(wildcard include/config/have/arch/soft/dirty.h) \
+    $(wildcard include/config/arch/enable/thp/migration.h) \
+  arch/x86/include/asm/fpu/xstate.h \
+  arch/x86/include/asm/fpu/api.h \
+    $(wildcard include/config/x86/debug/fpu.h) \
+  arch/x86/include/asm/pgtable_64.h \
+  arch/x86/include/asm/pgtable-invert.h \
+  include/asm-generic/pgtable.h \
+    $(wildcard include/config/have/arch/huge/vmap.h) \
+    $(wildcard include/config/x86/espfix64.h) \
+  include/linux/huge_mm.h \
+  include/linux/sched/coredump.h \
+    $(wildcard include/config/core/dump/default/elf/headers.h) \
   include/linux/vmstat.h \
     $(wildcard include/config/vm/event/counters.h) \
     $(wildcard include/config/debug/tlbflush.h) \
@@ -937,28 +1029,6 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/linux/vm_event_item.h \
     $(wildcard include/config/memory/balloon.h) \
     $(wildcard include/config/balloon/compaction.h) \
-  include/linux/socket.h \
-  arch/x86/include/generated/uapi/asm/socket.h \
-  include/uapi/asm-generic/socket.h \
-  arch/x86/include/generated/uapi/asm/sockios.h \
-  include/uapi/asm-generic/sockios.h \
-  include/uapi/linux/sockios.h \
-  include/linux/uio.h \
-    $(wildcard include/config/arch/has/uaccess/mcsafe.h) \
-  include/crypto/hash.h \
-  include/linux/crypto.h \
-    $(wildcard include/config/crypto/stats.h) \
-  include/linux/slab.h \
-    $(wildcard include/config/debug/slab.h) \
-    $(wildcard include/config/failslab.h) \
-    $(wildcard include/config/have/hardened/usercopy/allocator.h) \
-    $(wildcard include/config/slab.h) \
-    $(wildcard include/config/slub.h) \
-    $(wildcard include/config/slob.h) \
-  include/linux/kasan.h \
-    $(wildcard include/config/kasan/generic.h) \
-  include/uapi/linux/uio.h \
-  include/uapi/linux/socket.h \
   include/linux/net.h \
   include/linux/random.h \
     $(wildcard include/config/arch/random.h) \
@@ -1022,11 +1092,9 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/linux/netdev_features.h \
   include/linux/sched/clock.h \
     $(wildcard include/config/have/unstable/sched/clock.h) \
-    $(wildcard include/config/irq/time/accounting.h) \
   include/net/flow_dissector.h \
   include/linux/in6.h \
   include/uapi/linux/in6.h \
-  include/uapi/linux/libc-compat.h \
   include/linux/siphash.h \
   include/uapi/linux/if_ether.h \
   include/linux/splice.h \
@@ -1035,75 +1103,11 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/net/flow.h \
   include/linux/netfilter/nf_conntrack_common.h \
   include/uapi/linux/netfilter/nf_conntrack_common.h \
-  include/linux/netfilter.h \
-    $(wildcard include/config/netfilter.h) \
-    $(wildcard include/config/netfilter/family/arp.h) \
-    $(wildcard include/config/netfilter/family/bridge.h) \
-    $(wildcard include/config/decnet.h) \
-    $(wildcard include/config/nf/nat.h) \
-  include/uapi/linux/if.h \
-  include/uapi/linux/hdlc/ioctl.h \
-  include/linux/in.h \
-  include/uapi/linux/in.h \
-  include/linux/netfilter_defs.h \
-  include/uapi/linux/netfilter.h \
-  include/linux/netdevice.h \
-    $(wildcard include/config/dcb.h) \
-    $(wildcard include/config/hyperv/net.h) \
-    $(wildcard include/config/wlan.h) \
-    $(wildcard include/config/ax25.h) \
-    $(wildcard include/config/mac80211/mesh.h) \
-    $(wildcard include/config/net/ipip.h) \
-    $(wildcard include/config/net/ipgre.h) \
-    $(wildcard include/config/ipv6/sit.h) \
-    $(wildcard include/config/ipv6/tunnel.h) \
-    $(wildcard include/config/rps.h) \
-    $(wildcard include/config/netpoll.h) \
-    $(wildcard include/config/xdp/sockets.h) \
-    $(wildcard include/config/bql.h) \
-    $(wildcard include/config/rfs/accel.h) \
-    $(wildcard include/config/fcoe.h) \
-    $(wildcard include/config/xfrm/offload.h) \
-    $(wildcard include/config/net/poll/controller.h) \
-    $(wildcard include/config/libfcoe.h) \
-    $(wildcard include/config/wireless/ext.h) \
-    $(wildcard include/config/net/l3/master/dev.h) \
-    $(wildcard include/config/ipv6.h) \
-    $(wildcard include/config/vlan/8021q.h) \
-    $(wildcard include/config/net/dsa.h) \
-    $(wildcard include/config/tipc.h) \
-    $(wildcard include/config/irda.h) \
-    $(wildcard include/config/atalk.h) \
-    $(wildcard include/config/mpls/routing.h) \
-    $(wildcard include/config/netfilter/ingress.h) \
-    $(wildcard include/config/garp.h) \
-    $(wildcard include/config/mrp.h) \
-    $(wildcard include/config/cgroup/net/prio.h) \
-    $(wildcard include/config/net/flow/limit.h) \
-  include/linux/delay.h \
-  arch/x86/include/asm/delay.h \
-  include/asm-generic/delay.h \
-  include/linux/prefetch.h \
-  include/linux/dynamic_queue_limits.h \
-  include/linux/ethtool.h \
-  include/linux/compat.h \
-    $(wildcard include/config/arch/has/syscall/wrapper.h) \
-    $(wildcard include/config/compat/old/sigaction.h) \
-    $(wildcard include/config/odd/rt/sigaction.h) \
-  include/uapi/linux/aio_abi.h \
-  arch/x86/include/asm/compat.h \
-  include/linux/sched/task_stack.h \
-    $(wildcard include/config/debug/stack/usage.h) \
-  include/uapi/linux/magic.h \
-  arch/x86/include/asm/user32.h \
-  include/asm-generic/compat.h \
-  arch/x86/include/asm/syscall_wrapper.h \
-  include/uapi/linux/ethtool.h \
-  include/linux/if_ether.h \
   include/net/net_namespace.h \
     $(wildcard include/config/ieee802154/6lowpan.h) \
     $(wildcard include/config/ip/sctp.h) \
     $(wildcard include/config/ip/dccp.h) \
+    $(wildcard include/config/netfilter.h) \
     $(wildcard include/config/nf/defrag/ipv6.h) \
     $(wildcard include/config/netfilter/netlink/acct.h) \
     $(wildcard include/config/nf/ct/netlink/timeout.h) \
@@ -1138,7 +1142,13 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/net/netns/sctp.h \
   include/net/netns/dccp.h \
   include/net/netns/netfilter.h \
+    $(wildcard include/config/netfilter/family/arp.h) \
+    $(wildcard include/config/netfilter/family/bridge.h) \
     $(wildcard include/config/nf/defrag/ipv4.h) \
+  include/linux/netfilter_defs.h \
+  include/uapi/linux/netfilter.h \
+  include/linux/in.h \
+  include/uapi/linux/in.h \
   include/net/netns/x_tables.h \
     $(wildcard include/config/bridge/nf/ebtables.h) \
   include/net/netns/conntrack.h \
@@ -1147,7 +1157,6 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
     $(wildcard include/config/nf/ct/proto/gre.h) \
     $(wildcard include/config/nf/conntrack/events.h) \
     $(wildcard include/config/nf/conntrack/labels.h) \
-  include/linux/list_nulls.h \
   include/linux/netfilter/nf_conntrack_tcp.h \
   include/uapi/linux/netfilter/nf_conntrack_tcp.h \
   include/linux/netfilter/nf_conntrack_dccp.h \
@@ -1171,13 +1180,11 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/linux/sched/user.h \
     $(wildcard include/config/fanotify.h) \
     $(wildcard include/config/posix/mqueue.h) \
-    $(wildcard include/config/bpf/syscall.h) \
   include/net/dcbnl.h \
   include/uapi/linux/dcbnl.h \
   include/net/netprio_cgroup.h \
   include/linux/cgroup.h \
     $(wildcard include/config/cgroup/cpuacct.h) \
-    $(wildcard include/config/sock/cgroup/data.h) \
     $(wildcard include/config/cgroup/net/classid.h) \
     $(wildcard include/config/cgroup/data.h) \
     $(wildcard include/config/cgroup/bpf.h) \
@@ -1193,14 +1200,6 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
     $(wildcard include/config/generic/irq/probe.h) \
     $(wildcard include/config/irq/timings.h) \
   include/linux/irqreturn.h \
-  include/linux/hardirq.h \
-  include/linux/ftrace_irq.h \
-    $(wildcard include/config/ftrace/nmi/enter.h) \
-    $(wildcard include/config/hwlat/tracer.h) \
-  include/linux/vtime.h \
-    $(wildcard include/config/virt/cpu/accounting.h) \
-  include/linux/context_tracking_state.h \
-    $(wildcard include/config/context/tracking.h) \
   arch/x86/include/asm/irq.h \
   arch/x86/include/asm/sections.h \
   include/asm-generic/sections.h \
@@ -1209,7 +1208,6 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/linux/bpf.h \
     $(wildcard include/config/bpf/jit/always/on.h) \
     $(wildcard include/config/bpf/stream/parser.h) \
-    $(wildcard include/config/inet.h) \
   include/uapi/linux/bpf.h \
     $(wildcard include/config/efficient/unaligned/access.h) \
     $(wildcard include/config/bpf/kprobe/override.h) \
@@ -1256,19 +1254,6 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/uapi/linux/pkt_cls.h \
   include/uapi/linux/pkt_sched.h \
   include/linux/hashtable.h \
-  include/linux/netfilter/nf_conntrack_zones_common.h \
-  include/uapi/linux/netfilter/nf_conntrack_tuple_common.h \
-  include/linux/netfilter_ipv4.h \
-  include/uapi/linux/netfilter_ipv4.h \
-  include/linux/ip.h \
-  include/uapi/linux/ip.h \
-  include/linux/tcp.h \
-    $(wildcard include/config/smc.h) \
-    $(wildcard include/config/bpf.h) \
-    $(wildcard include/config/tcp/md5sig.h) \
-  include/linux/win_minmax.h \
-  include/net/sock.h \
-    $(wildcard include/config/sock/validate/xmit.h) \
   include/linux/page_counter.h \
   include/linux/memcontrol.h \
     $(wildcard include/config/memcg/swap.h) \
@@ -1356,6 +1341,21 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/net/fib_rules.h \
   include/uapi/linux/fib_rules.h \
   include/net/fib_notifier.h \
+  /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/netfltr.h \
+  include/generated/uapi/linux/version.h \
+  include/linux/netfilter.h \
+    $(wildcard include/config/nf/nat.h) \
+  include/linux/netfilter/nf_conntrack_zones_common.h \
+  include/uapi/linux/netfilter/nf_conntrack_tuple_common.h \
+  include/linux/netfilter_ipv4.h \
+  include/uapi/linux/netfilter_ipv4.h \
+  include/linux/ip.h \
+  include/uapi/linux/ip.h \
+  include/linux/tcp.h \
+    $(wildcard include/config/smc.h) \
+    $(wildcard include/config/bpf.h) \
+    $(wildcard include/config/tcp/md5sig.h) \
+  include/linux/win_minmax.h \
   include/net/inet_connection_sock.h \
   include/net/inet_sock.h \
   include/net/request_sock.h \
@@ -1364,6 +1364,6 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/net/timewait_sock.h \
   include/uapi/linux/tcp.h \
 
-/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.o: $(deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.o)
+/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/linux_module.o: $(deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/linux_module.o)
 
-$(deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.o):
+$(deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/linux_module.o):

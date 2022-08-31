@@ -1,7 +1,7 @@
 /*
  * @Author: Rio
  * @Date: 2022-08-21 00:21:29
- * @LastEditTime: 2022-08-30 20:10:25
+ * @LastEditTime: 2022-08-31 18:36:18
  * @FilePath: /firewall-in-linux-module/linuxModule/my_firewall/dya_firewall.c
  * @Description:
  */
@@ -46,6 +46,8 @@ unsigned int in_filtrFunc(void *priv,
 	ip_header = (struct iphdr *)skb_network_header(sock_buff);
 	udp_header = (struct udphdr *)skb_transport_header(sock_buff);
 	tcp_header = (struct tcphdr *)skb_transport_header(sock_buff);
+
+	// return NF_ACCEPT; // For test
 
 	if (!sock_buff)
 	{
@@ -157,6 +159,8 @@ unsigned int out_filtrFunc(void *priv,
 	/* Extract network header using accessor */
 	ip_header = (struct iphdr *)skb_network_header(sock_buff);
 	tcp_header = (struct tcphdr *)skb_transport_header(sock_buff);
+
+	// return NF_ACCEPT; // For test
 
 	if (!sock_buff)
 	{

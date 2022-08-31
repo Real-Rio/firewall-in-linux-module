@@ -1363,7 +1363,6 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/net/inet_timewait_sock.h \
   include/net/timewait_sock.h \
   include/uapi/linux/tcp.h \
-  /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.h \
 
 /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_firewall.o: $(deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_firewall.o)
 

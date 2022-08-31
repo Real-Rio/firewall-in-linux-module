@@ -1,2 +1,2 @@
-/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_firewall.o /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_firewall-lkm.o /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.o
+/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/linux_module.o /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_firewall.o /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/dya_utils.o /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/nl_kernel.o
 
