@@ -157,6 +157,6 @@ void ip_to_str(unsigned int ip, char *str)
         quad2 = (ip - (quad1 * 16777216)) / 65536;
         quad3 = (ip - (quad1 * 16777216) - (quad2 * 65536)) / 256;
         quad4 = ip - (quad1 * 16777216) - (quad2 * 65536) - (quad3 * 256);
-        sprintf(str, "%u.%u.%u.%u", quad1, quad2, quad3, quad4);
+        sprintf(str, "%u.%u.%u.%u", quad4, quad3, quad2, quad1);
     }
 }

@@ -66,10 +66,11 @@ unsigned int str_to_ip(char *str, int len)
     quad4[j] = '\0';
 
     // q1 = (unsigned int)simple_strtol(quad1, &ch, 10);
-    q1 = str_to_int(quad1);
-    q2 = str_to_int(quad2);
-    q3 = str_to_int(quad3);
-    q4 = str_to_int(quad4);
+    //反过来，为了匹配网络字节序
+    q1 = str_to_int(quad4);
+    q2 = str_to_int(quad3);
+    q3 = str_to_int(quad2);
+    q4 = str_to_int(quad1);
 
     q1 *= 16777216;
     q2 *= 65536;
@@ -98,7 +99,7 @@ void ip_to_str(unsigned int ip, char *str)
         quad2 = (ip - (quad1 * 16777216)) / 65536;
         quad3 = (ip - (quad1 * 16777216) - (quad2 * 65536)) / 256;
         quad4 = ip - (quad1 * 16777216) - (quad2 * 65536) - (quad3 * 256);
-        sprintf(str, "%u.%u.%u.%u", quad1, quad2, quad3, quad4);
+        sprintf(str, "%u.%u.%u.%u", quad4, quad3, quad2, quad1);
     }
 }
 

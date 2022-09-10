@@ -1,9 +1,9 @@
 /*
  * @Author: Rio
  * @Date: 2022-08-21 00:21:29
- * @LastEditTime: 2022-08-31 18:36:18
- * @FilePath: /firewall-in-linux-module/linuxModule/my_firewall/dya_firewall.c
- * @Description:
+ * @LastEditTime: 2022-09-10 22:45:06
+ * @FilePath: /firewall-in-linux-module/linuxModule/my_firewall/netfltrFunc.c
+ * @Description:netfilter 函数
  */
 #include "netfltr.h"
 
@@ -51,33 +51,50 @@ unsigned int in_filtrFunc(void *priv,
 
 	if (!sock_buff)
 	{
+		printk("[IN]sock is empty");
 		return NF_ACCEPT;
 	}
+
 	/* Iterate through the T_RULES array */
 	for (i = 0; i < ruleCount; i++)
 	{
+		// test
+		char srcIP[20], dstIP[20], ruleDSTIP[20], ruleSRCIP[20];
+		ip_to_str(ip_header->saddr, srcIP);
+
+		ip_to_str(T_RULES[i].srcip, ruleSRCIP);
+		//
+		printk("srcIP:%s,dstPORT:%d,rule's srcIP:%s,rule's dstPORT:%d", srcIP, tcp_header->dest, ruleSRCIP, T_RULES[i].dstpt);
 		/* Check if the rule is for incoming packets */
-		if (T_RULES[i].pkt == 1)
+		if (T_RULES[i].pkt == '1')
 		{
+			// printk("0");
+
 			/* Check if the rule has protocol field set to ALL */
-			if (T_RULES[i].proto == 0)
+			if (T_RULES[i].proto == '0')
 			{
 				/* Check IP address */
 				if (compare_ip((unsigned int)ip_header->saddr, T_RULES[i].srcip))
 				{
+					// printk("1");
 					/* Check destination port number */
 					if (compare_port(tcp_header->dest, T_RULES[i].dstpt))
 					{
+						// printk("2");
 						/* Check whether to BLOCK the packet */
-						if (T_RULES[i].block == 1)
+						if (T_RULES[i].block == '1')
 						{
+							// printk("3");
 							printk(KERN_INFO "firewall: Blocking incoming pkts\n");
 							return NF_DROP;
 						}
 						else
+						// printk("4");
 						{
-							if (T_RULES[i].block == 0)
+							if (T_RULES[i].block == '0')
 							{
+								// printk("5");
+
 								printk(KERN_INFO "firewall: Unblocking incoming pkts");
 								return NF_ACCEPT;
 							}
@@ -86,7 +103,7 @@ unsigned int in_filtrFunc(void *priv,
 				}
 			}
 			/* Check if the rule has protocol field set to TCP */
-			if ((T_RULES[i].proto == 1) && (ip_header->protocol == 6))
+			if ((T_RULES[i].proto == '1') && (ip_header->protocol == 6))
 			{
 				/* Check IP address */
 				if (compare_ip((unsigned int)ip_header->saddr, T_RULES[i].srcip))
@@ -95,14 +112,14 @@ unsigned int in_filtrFunc(void *priv,
 					if (compare_port(tcp_header->dest, T_RULES[i].dstpt))
 					{
 						/* Check whether to BLOCK the packet */
-						if (T_RULES[i].block == 1)
+						if (T_RULES[i].block == '1')
 						{
 							printk(KERN_INFO "firewall: Blocking Incoming TCP pkts\n");
 							return NF_DROP;
 						}
 						else
 						{
-							if (T_RULES[i].block == 0)
+							if (T_RULES[i].block == '0')
 							{
 								printk(KERN_INFO "firewall: Unblocking Incoming TCP pkts");
 								return NF_ACCEPT;
@@ -112,7 +129,7 @@ unsigned int in_filtrFunc(void *priv,
 				}
 			}
 			/* Check if the rule has protocol field set to UDP */
-			if ((T_RULES[i].proto == 2) && (ip_header->protocol == 17))
+			if ((T_RULES[i].proto == '2') && (ip_header->protocol == 17))
 			{
 				/* Check IP address */
 				if (compare_ip((unsigned int)ip_header->saddr, T_RULES[i].srcip))
@@ -121,14 +138,14 @@ unsigned int in_filtrFunc(void *priv,
 					if (compare_port(tcp_header->dest, T_RULES[i].dstpt))
 					{
 						/* Check whether to BLOCK the packet */
-						if (T_RULES[i].block == 1)
+						if (T_RULES[i].block == '1')
 						{
 							printk(KERN_INFO "firewall: Blocking Incoming UDP pkts\n");
 							return NF_DROP;
 						}
 						else
 						{
-							if (T_RULES[i].block == 0)
+							if (T_RULES[i].block == '0')
 							{
 								printk(KERN_INFO "firewall: Unblocking all Incoming UDP pkts");
 								return NF_ACCEPT;
@@ -139,6 +156,7 @@ unsigned int in_filtrFunc(void *priv,
 			}
 		}
 	}
+	printk(KERN_INFO "firewall: Accepting incoming pkts");
 	return NF_ACCEPT;
 }
 

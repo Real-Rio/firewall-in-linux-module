@@ -31,6 +31,7 @@ __used __section(__versions) = {
 	{ 0x8fb5bd0f, "netlink_unicast" },
 	{ 0xd2c6f324, "init_net" },
 	{ 0x40481db1, "nf_register_net_hook" },
+	{ 0x12690e19, "nf_unregister_net_hook" },
 	{ 0x179a6375, "__alloc_skb" },
 	{ 0xa916b694, "strnlen" },
 	{ 0xdecd0b29, "__stack_chk_fail" },
@@ -44,4 +45,4 @@ __used __section(__versions) = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "DC4293698B95D740F1BE737");
+MODULE_INFO(srcversion, "9DE7C51305998E20878E3DB");

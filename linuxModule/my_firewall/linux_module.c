@@ -1,7 +1,7 @@
 /*
  * @Author: Rio
  * @Date: 2022-08-31 18:22:44
- * @LastEditTime: 2022-09-02 11:13:11
+ * @LastEditTime: 2022-09-10 21:44:25
  * @FilePath: /firewall-in-linux-module/linuxModule/my_firewall/linux_module.c
  * @Description:内核模块
  */
@@ -72,13 +72,13 @@ void __exit nltest_exit(void)
 	sock_release(nlsk->sk_socket);
 	printk("Netlink test module exit!\n");
 
-	// unregister hook depends on kernel version
+// unregister hook depends on kernel version
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(4, 13, 0)
-	nf_register_net_hook(&init_net, &in_nfho);
-	nf_register_net_hook(&init_net, &out_nfho);
+	nf_unregister_net_hook(&init_net, &in_nfho);
+	nf_unregister_net_hook(&init_net, &out_nfho);
 #else
-	nf_register_hook(&in_nfho);
-	nf_register_hook(&out_nfho);
+	nf_unregister_hook(&in_nfho);
+	nf_unregister_hook(&out_nfho);
 #endif
 }
 
