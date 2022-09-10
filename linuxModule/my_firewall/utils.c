@@ -47,6 +47,11 @@ unsigned int str_to_ip(char *str, int len)
     unsigned int q1, q2, q3, q4;
     char *ch;
 
+    if (strncmp(str, "*", 1) == 0)
+    {
+        return ip;
+    }
+
     while ((str[i] != '.') && (i < len))
     {
         quad1[j++] = str[i++];
@@ -83,11 +88,6 @@ unsigned int str_to_ip(char *str, int len)
     q2 *= 65536;
     q3 *= 256;
     ip = q1 + q2 + q3 + q4;
-
-    if (strncmp(str, "*", 1) == 0)
-    {
-        return ip;
-    }
 
     return ip;
 }
@@ -136,5 +136,27 @@ bool compare_port(unsigned int pktpt, unsigned int rulept)
     else
     {
         return false;
+    }
+}
+void port_to_str(unsigned int port, char *str)
+{
+    if (!port)
+        sprintf(str, "*");
+    else
+        sprintf(str, "%u", port);
+}
+
+void ip_to_str(unsigned int ip, char *str)
+{
+    unsigned int quad1, quad2, quad3, quad4;
+    if (!ip)
+        sprintf(str, "*");
+    else
+    {
+        quad1 = ip / 16777216;
+        quad2 = (ip - (quad1 * 16777216)) / 65536;
+        quad3 = (ip - (quad1 * 16777216) - (quad2 * 65536)) / 256;
+        quad4 = ip - (quad1 * 16777216) - (quad2 * 65536) - (quad3 * 256);
+        sprintf(str, "%u.%u.%u.%u", quad1, quad2, quad3, quad4);
     }
 }

@@ -12,7 +12,12 @@
             "dya_utils.h": "c",
             "kernel.h": "c",
             "tcp.h": "c",
-            "netlink.h": "c"
+            "netlink.h": "c",
+            "nl_client.h": "c",
+            "init.h": "c",
+            "netfilter_ipv4.h": "c",
+            "version.h": "c",
+            "string.h": "c"
         }
     }
 }

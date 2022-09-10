@@ -1341,6 +1341,28 @@ deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModu
   include/net/fib_rules.h \
   include/uapi/linux/fib_rules.h \
   include/net/fib_notifier.h \
+  /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/netfltr.h \
+  include/generated/uapi/linux/version.h \
+  include/linux/netfilter.h \
+    $(wildcard include/config/nf/nat.h) \
+  include/linux/netfilter/nf_conntrack_zones_common.h \
+  include/uapi/linux/netfilter/nf_conntrack_tuple_common.h \
+  include/linux/netfilter_ipv4.h \
+  include/uapi/linux/netfilter_ipv4.h \
+  include/linux/ip.h \
+  include/uapi/linux/ip.h \
+  include/linux/tcp.h \
+    $(wildcard include/config/smc.h) \
+    $(wildcard include/config/bpf.h) \
+    $(wildcard include/config/tcp/md5sig.h) \
+  include/linux/win_minmax.h \
+  include/net/inet_connection_sock.h \
+  include/net/inet_sock.h \
+  include/net/request_sock.h \
+  include/net/netns/hash.h \
+  include/net/inet_timewait_sock.h \
+  include/net/timewait_sock.h \
+  include/uapi/linux/tcp.h \
 
 /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/nl_kernel.o: $(deps_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/linuxModule/my_firewall/nl_kernel.o)
 
