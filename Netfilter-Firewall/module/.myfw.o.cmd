@@ -1,0 +1,1 @@
+cmd_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/Netfilter-Firewall/module/myfw.o := ld -m elf_x86_64  -z max-page-size=0x200000    -r -o /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/Netfilter-Firewall/module/myfw.o /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/Netfilter-Firewall/module/myfw_mod.o

@@ -17,7 +17,10 @@
             "init.h": "c",
             "netfilter_ipv4.h": "c",
             "version.h": "c",
-            "string.h": "c"
+            "string.h": "c",
+            "iosfwd": "cpp",
+            "*.tcc": "cpp",
+            "functional": "c"
         }
     }
 }

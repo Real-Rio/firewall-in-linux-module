@@ -1,0 +1,1 @@
+cmd_/root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/Netfilter-Firewall/module/myfw.mod := { echo  /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/Netfilter-Firewall/module/myfw_mod.o;  echo; } > /root/codeforfun/netsecurityCoursedesign/firewall-in-linux-module/Netfilter-Firewall/module/myfw.mod
