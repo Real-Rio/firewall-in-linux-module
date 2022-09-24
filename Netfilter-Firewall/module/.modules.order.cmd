@@ -1,0 +1,1 @@
+cmd_/home/rio/firewall/firewall-in-linux-module/Netfilter-Firewall/module/modules.order := {   echo /home/rio/firewall/firewall-in-linux-module/Netfilter-Firewall/module/myfw.ko; :; } | awk '!x[$$0]++' - > /home/rio/firewall/firewall-in-linux-module/Netfilter-Firewall/module/modules.order

@@ -1,0 +1,1 @@
+cmd_/home/rio/firewall/firewall-in-linux-module/linuxModule/my_firewall/Module.symvers := sed 's/\.ko$$/\.o/' /home/rio/firewall/firewall-in-linux-module/linuxModule/my_firewall/modules.order | scripts/mod/modpost -m -a  -o /home/rio/firewall/firewall-in-linux-module/linuxModule/my_firewall/Module.symvers -e -i Module.symvers   -T -

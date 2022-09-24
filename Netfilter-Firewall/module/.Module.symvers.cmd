@@ -1,0 +1,1 @@
+cmd_/home/rio/firewall/firewall-in-linux-module/Netfilter-Firewall/module/Module.symvers := sed 's/\.ko$$/\.o/' /home/rio/firewall/firewall-in-linux-module/Netfilter-Firewall/module/modules.order | scripts/mod/modpost -m -a  -o /home/rio/firewall/firewall-in-linux-module/Netfilter-Firewall/module/Module.symvers -e -i Module.symvers   -T -
